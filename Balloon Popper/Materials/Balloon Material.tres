@@ -4,3 +4,4 @@
 transparency = 1
 albedo_color = Color(1, 0, 0, 0.784314)
 roughness = 0.1
+rim_enabled = true
