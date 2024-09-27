@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://d1tm3gajamsfp"]
+
+[ext_resource type="Script" path="res://Physics/physics player.gd" id="1_h74es"]
+[ext_resource type="Texture2D" uid="uid://c4n6jnef24b10" path="res://Physics/Sprites/PhysicsCharacter.png" id="1_ok6ru"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qudp2"]
+size = Vector2(18, 18)
+
+[node name="Root" type="Node2D"]
+
+[node name="Player" type="RigidBody2D" parent="."]
+mass = 5.0
+gravity_scale = 0.0
+linear_damp = 1.0
+script = ExtResource("1_h74es")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+texture = ExtResource("1_ok6ru")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+shape = SubResource("RectangleShape2D_qudp2")
+
+[node name="Camera2D" type="Camera2D" parent="."]
