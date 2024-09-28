@@ -1,6 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://7td1g6bkfoer"]
+[gd_scene load_steps=3 format=3 uid="uid://7td1g6bkfoer"]
 
 [ext_resource type="Script" path="res://Loops/Scripts/loops.gd" id="1_drpmu"]
+[ext_resource type="Texture2D" uid="uid://b08w3qxsuvxtj" path="res://Loops/Sprites/Black Pixel.png" id="2_pcwu7"]
 
 [node name="Root" type="Node2D"]
 script = ExtResource("1_drpmu")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -589.0
+offset_top = -339.0
+offset_right = -549.0
+offset_bottom = -299.0
+scale = Vector2(30.0481, 17.0281)
+texture = ExtResource("2_pcwu7")
+
+[node name="Camera2D" type="Camera2D" parent="."]
