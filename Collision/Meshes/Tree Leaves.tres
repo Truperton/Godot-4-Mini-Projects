@@ -1,0 +1,8 @@
+[gd_resource type="CylinderMesh" load_steps=2 format=3 uid="uid://cs6vp0k3pv7xy"]
+
+[ext_resource type="Material" uid="uid://bxief4p2f4vf4" path="res://Collision/Materials/Tree Leaves Material.tres" id="1_rorjm"]
+
+[resource]
+material = ExtResource("1_rorjm")
+top_radius = 0.0
+bottom_radius = 1.0
